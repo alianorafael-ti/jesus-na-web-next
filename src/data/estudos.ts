@@ -5,6 +5,7 @@ import { nascidaAMargemAceitaAMesa } from "@/content/estudos/nascida-a-margem-ac
 import { jesusCristo } from "@/content/estudos/jesus-cristo";
 
 import { aImportanciaDaOracao } from "@/content/estudos/a-importancia-da-oracao";
+import { oPoderDaLeituraBiblica } from "@/content/estudos/o-poder-da-leitura-biblica";
 
 import { martinhoLutero } from "@/content/estudos/martinho-lutero";
 import { isaacWatts } from "@/content/estudos/isaac-watts";
@@ -18,6 +19,7 @@ export const estudos: Estudo[] = [
   jesusCristo,
 
   aImportanciaDaOracao,
+  oPoderDaLeituraBiblica,
 
   martinhoLutero,
   isaacWatts,
