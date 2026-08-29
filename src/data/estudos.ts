@@ -7,6 +7,10 @@ import { jesusCristo } from "@/content/estudos/jesus-cristo";
 import { aImportanciaDaOracao } from "@/content/estudos/a-importancia-da-oracao";
 import { oPoderDaLeituraBiblica } from "@/content/estudos/o-poder-da-leitura-biblica";
 
+import { existeEvidenciaParaAExistenciaDeDeus } from "@/content/estudos/existe-evidencia-para-a-existencia-de-deus";
+import { guerraDosCemAnos } from "@/content/estudos/guerra-dos-cem-anos";
+import { oCismaDoGrandeOcidente } from "@/content/estudos/o-cisma-do-grande-ocidente";
+
 import { martinhoLutero } from "@/content/estudos/martinho-lutero";
 import { isaacWatts } from "@/content/estudos/isaac-watts";
 import { charlesWesley } from "@/content/estudos/charles-wesley";
@@ -20,6 +24,10 @@ export const estudos: Estudo[] = [
 
   aImportanciaDaOracao,
   oPoderDaLeituraBiblica,
+
+  existeEvidenciaParaAExistenciaDeDeus,
+  guerraDosCemAnos,
+  oCismaDoGrandeOcidente,
 
   martinhoLutero,
   isaacWatts,

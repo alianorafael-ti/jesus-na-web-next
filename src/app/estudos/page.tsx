@@ -43,6 +43,28 @@ export default function EstudosPage() {
         (a.ordemNaSerie ?? 0) - (b.ordemNaSerie ?? 0)
     );
 
+  const apologetica = estudos
+    .filter(
+      (estudo) =>
+        estudo.serie === "Apologética" &&
+        estudo.ordemNaSerie !== undefined
+    )
+    .sort(
+      (a, b) =>
+        (a.ordemNaSerie ?? 0) - (b.ordemNaSerie ?? 0)
+    );
+
+  const historiaDaIgreja = estudos
+    .filter(
+      (estudo) =>
+        estudo.serie === "História da Igreja" &&
+        estudo.ordemNaSerie !== undefined
+    )
+    .sort(
+      (a, b) =>
+        (a.ordemNaSerie ?? 0) - (b.ordemNaSerie ?? 0)
+    );
+
   const estudosIndependentes = estudos.filter(
     (estudo) => !estudo.serie
   );
@@ -206,6 +228,104 @@ export default function EstudosPage() {
 
             <Link
               href="/estudos/disciplinas-espirituais"
+              className="inline-flex w-fit rounded-md border border-[#d4af37] px-5 py-3 font-semibold text-[#d4af37] transition hover:bg-[#d4af37] hover:text-black"
+            >
+              Conhecer a série
+            </Link>
+          </article>
+
+          {/* Série: Apologética */}
+          <article className="flex flex-col rounded-xl border border-yellow-500/20 bg-[#1a1a1a] p-7 shadow-xl shadow-black/10 transition hover:border-yellow-500/60">
+            <p className="mb-3 text-sm font-bold tracking-wider text-[#d4af37] uppercase">
+              Série
+            </p>
+
+            <h2 className="mb-3 text-2xl font-bold leading-tight text-white">
+              Apologética Cristã
+            </h2>
+
+            <p className="mb-6 leading-7 text-zinc-300">
+              Compreendendo e apresentando as razões da fé cristã com amor,
+              sabedoria e firmeza.
+            </p>
+
+            <div className="mb-7 border-t border-yellow-500/20 pt-5">
+              <p className="mb-4 text-sm font-bold tracking-wider text-[#d4af37] uppercase">
+                Índice
+              </p>
+
+              <div className="flex flex-col gap-3">
+                <Link
+                  href="/estudos/apologetica"
+                  className="text-zinc-200 transition hover:text-[#d4af37]"
+                >
+                  Introdução
+                </Link>
+
+                {apologetica.map((estudo) => (
+                  <Link
+                    key={estudo.id}
+                    href={`/estudos/${estudo.slug}`}
+                    className="text-zinc-200 transition hover:text-[#d4af37]"
+                  >
+                    {estudo.ordemNaSerie}.{" "}
+                    {estudo.subcategoria ?? estudo.titulo}
+                  </Link>
+                ))}
+              </div>
+            </div>
+
+            <Link
+              href="/estudos/apologetica"
+              className="inline-flex w-fit rounded-md border border-[#d4af37] px-5 py-3 font-semibold text-[#d4af37] transition hover:bg-[#d4af37] hover:text-black"
+            >
+              Conhecer a série
+            </Link>
+          </article>
+
+          {/* Série: História da Igreja */}
+          <article className="flex flex-col rounded-xl border border-yellow-500/20 bg-[#1a1a1a] p-7 shadow-xl shadow-black/10 transition hover:border-yellow-500/60">
+            <p className="mb-3 text-sm font-bold tracking-wider text-[#d4af37] uppercase">
+              Série Especial
+            </p>
+
+            <h2 className="mb-3 text-2xl font-bold leading-tight text-white">
+              História da Igreja
+            </h2>
+
+            <p className="mb-6 leading-7 text-zinc-300">
+              Uma caminhada pela história cristã entre a fidelidade de Deus
+              e as marcas da fragilidade humana.
+            </p>
+
+            <div className="mb-7 border-t border-yellow-500/20 pt-5">
+              <p className="mb-4 text-sm font-bold tracking-wider text-[#d4af37] uppercase">
+                Índice
+              </p>
+
+              <div className="flex flex-col gap-3">
+                <Link
+                  href="/estudos/historia-da-igreja"
+                  className="text-zinc-200 transition hover:text-[#d4af37]"
+                >
+                  Introdução
+                </Link>
+
+                {historiaDaIgreja.map((estudo) => (
+                  <Link
+                    key={estudo.id}
+                    href={`/estudos/${estudo.slug}`}
+                    className="text-zinc-200 transition hover:text-[#d4af37]"
+                  >
+                    {estudo.ordemNaSerie}.{" "}
+                    {estudo.subcategoria ?? estudo.titulo}
+                  </Link>
+                ))}
+              </div>
+            </div>
+
+            <Link
+              href="/estudos/historia-da-igreja"
               className="inline-flex w-fit rounded-md border border-[#d4af37] px-5 py-3 font-semibold text-[#d4af37] transition hover:bg-[#d4af37] hover:text-black"
             >
               Conhecer a série
