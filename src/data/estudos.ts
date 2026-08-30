@@ -11,6 +11,15 @@ import { existeEvidenciaParaAExistenciaDeDeus } from "@/content/estudos/existe-e
 import { guerraDosCemAnos } from "@/content/estudos/guerra-dos-cem-anos";
 import { oCismaDoGrandeOcidente } from "@/content/estudos/o-cisma-do-grande-ocidente";
 
+import { aBibliaEImortalidadeDaAlma } from "@/content/estudos/a-biblia-e-a-imortalidade-da-alma";
+import { deusEscolheOsDesprezados } from "@/content/estudos/deus-escolhe-os-desprezados";
+import { novaCriatura } from "@/content/estudos/nova-criatura";
+import { quandoABibliaFala } from "@/content/estudos/quando-a-biblia-fala";
+import { rockEAdoracaoIssoGlorificaADeus } from "@/content/estudos/rock-e-adoracao-isso-glorifica-a-deus";
+
+
+
+
 import { martinhoLutero } from "@/content/estudos/martinho-lutero";
 import { isaacWatts } from "@/content/estudos/isaac-watts";
 import { charlesWesley } from "@/content/estudos/charles-wesley";
@@ -29,6 +38,12 @@ export const estudos: Estudo[] = [
   guerraDosCemAnos,
   oCismaDoGrandeOcidente,
 
+  aBibliaEImortalidadeDaAlma,
+  deusEscolheOsDesprezados,
+  novaCriatura,
+  quandoABibliaFala,
+  rockEAdoracaoIssoGlorificaADeus,
+  
   martinhoLutero,
   isaacWatts,
   charlesWesley,
