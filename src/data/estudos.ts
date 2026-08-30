@@ -17,7 +17,9 @@ import { novaCriatura } from "@/content/estudos/nova-criatura";
 import { quandoABibliaFala } from "@/content/estudos/quando-a-biblia-fala";
 import { rockEAdoracaoIssoGlorificaADeus } from "@/content/estudos/rock-e-adoracao-isso-glorifica-a-deus";
 
+import { oQueSignificaAndarNoEspirito } from "@/content/estudos/o-que-significa-andar-no-espirito";
 
+import { oChamadoMissionario } from "@/content/estudos/o-chamado-missionario";
 
 
 import { martinhoLutero } from "@/content/estudos/martinho-lutero";
@@ -43,6 +45,10 @@ export const estudos: Estudo[] = [
   novaCriatura,
   quandoABibliaFala,
   rockEAdoracaoIssoGlorificaADeus,
+  
+  oQueSignificaAndarNoEspirito,
+
+  oChamadoMissionario,
   
   martinhoLutero,
   isaacWatts,
