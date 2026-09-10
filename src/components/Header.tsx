@@ -8,6 +8,7 @@ const links = [
   { nome: "Home", href: "/" },
   { nome: "Jornada", href: "/jornada" },
   { nome: "Estudos", href: "/estudos" },
+  { nome: "Vida em Foco", href: "/vida-em-foco" },
   { nome: "Quem Somos", href: "/quem-somos" },
   { nome: "Testemunhos", href: "/testemunhos" },
   { nome: "Oração", href: "/oracao" },
