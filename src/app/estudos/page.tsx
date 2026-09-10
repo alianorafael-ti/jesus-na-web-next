@@ -591,7 +591,7 @@ export default function EstudosPage() {
               alt="Curiosidade histórica sobre Davi e a organização do serviço musical de Israel"
               fill
               sizes="(min-width: 768px) 50vw, 100vw"
-              className="object-cover"
+              className="object-contain"
             />
           </div>
 
