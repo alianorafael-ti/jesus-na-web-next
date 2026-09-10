@@ -98,6 +98,17 @@ export default function EstudosPage() {
         (a.ordemNaSerie ?? 0) - (b.ordemNaSerie ?? 0)
     );
 
+    const louvorEAdoracao = estudos
+  .filter(
+    (estudo) =>
+      estudo.serie === "Louvor e Adoração" &&
+      estudo.ordemNaSerie !== undefined
+  )
+  .sort(
+    (a, b) =>
+      (a.ordemNaSerie ?? 0) - (b.ordemNaSerie ?? 0)
+  );
+
   const estudosIndependentes = estudos.filter(
     (estudo) => !estudo.serie
   );
@@ -506,6 +517,54 @@ export default function EstudosPage() {
 
             <Link
               href="/estudos/missoes"
+              className="inline-flex w-fit rounded-md border border-[#d4af37] px-5 py-3 font-semibold text-[#d4af37] transition hover:bg-[#d4af37] hover:text-black"
+            >
+              Conhecer a série
+            </Link>
+          </article>
+                    {/* Série: Louvor e Adoração */}
+          <article className="flex flex-col rounded-xl border border-yellow-500/20 bg-[#1a1a1a] p-7 shadow-xl shadow-black/10 transition hover:border-yellow-500/60">
+            <p className="mb-3 text-sm font-bold tracking-wider text-[#d4af37] uppercase">
+              Série
+            </p>
+
+            <h2 className="mb-3 text-2xl font-bold leading-tight text-white">
+              Louvor e Adoração
+            </h2>
+
+            <p className="mb-6 leading-7 text-zinc-300">
+              Uma jornada para compreender a adoração que vai além da música
+              e alcança toda a vida diante de Deus.
+            </p>
+
+            <div className="mb-7 border-t border-yellow-500/20 pt-5">
+              <p className="mb-4 text-sm font-bold tracking-wider text-[#d4af37] uppercase">
+                Índice
+              </p>
+
+              <div className="flex flex-col gap-3">
+                <Link
+                  href="/estudos/louvor-e-adoracao"
+                  className="text-zinc-200 transition hover:text-[#d4af37]"
+                >
+                  Introdução
+                </Link>
+
+                {louvorEAdoracao.map((estudo) => (
+                  <Link
+                    key={estudo.id}
+                    href={`/estudos/${estudo.slug}`}
+                    className="text-zinc-200 transition hover:text-[#d4af37]"
+                  >
+                    {estudo.ordemNaSerie}.{" "}
+                    {estudo.subcategoria ?? estudo.titulo}
+                  </Link>
+                ))}
+              </div>
+            </div>
+
+            <Link
+              href="/estudos/louvor-e-adoracao"
               className="inline-flex w-fit rounded-md border border-[#d4af37] px-5 py-3 font-semibold text-[#d4af37] transition hover:bg-[#d4af37] hover:text-black"
             >
               Conhecer a série

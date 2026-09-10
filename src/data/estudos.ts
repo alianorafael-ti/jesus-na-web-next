@@ -21,6 +21,8 @@ import { oQueSignificaAndarNoEspirito } from "@/content/estudos/o-que-significa-
 
 import { oChamadoMissionario } from "@/content/estudos/o-chamado-missionario";
 
+import { osLevitas } from "@/content/estudos/os-levitas";
+
 
 import { martinhoLutero } from "@/content/estudos/martinho-lutero";
 import { isaacWatts } from "@/content/estudos/isaac-watts";
@@ -49,6 +51,8 @@ export const estudos: Estudo[] = [
   oQueSignificaAndarNoEspirito,
 
   oChamadoMissionario,
+
+  osLevitas,
   
   martinhoLutero,
   isaacWatts,
