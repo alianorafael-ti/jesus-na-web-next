@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 
 import { estudos } from "@/data/estudos";
@@ -215,6 +216,12 @@ export default function EstudosPage() {
               </p>
 
               <div className="flex flex-col gap-3">
+                <Link
+  href="/estudos/meditacoes"
+  className="text-zinc-200 transition hover:text-[#d4af37]"
+>
+  Introdução
+</Link>
                 {meditacoes.map((estudo) => (
                   <Link
                     key={estudo.id}
@@ -227,6 +234,12 @@ export default function EstudosPage() {
                 ))}
               </div>
             </div>
+            <Link
+  href="/estudos/meditacoes"
+  className="inline-flex w-fit rounded-md border border-[#d4af37] px-5 py-3 font-semibold text-[#d4af37] transition hover:bg-[#d4af37] hover:text-black"
+>
+  Conhecer a série
+</Link>
           </article>
 
           {/* Série: Disciplinas Espirituais */}
@@ -570,6 +583,17 @@ export default function EstudosPage() {
               Conhecer a série
             </Link>
           </article>
+
+                    {/* Curiosidade histórica */}
+          <div className="relative min-h-[420px] overflow-hidden rounded-xl border border-yellow-500/20 shadow-xl shadow-black/10">
+            <Image
+              src="/curiosidade-davi-louvor.png"
+              alt="Curiosidade histórica sobre Davi e a organização do serviço musical de Israel"
+              fill
+              sizes="(min-width: 768px) 50vw, 100vw"
+              className="object-cover"
+            />
+          </div>
 
           {/* Estudos independentes */}
           {estudosIndependentes.map((estudo) => (
