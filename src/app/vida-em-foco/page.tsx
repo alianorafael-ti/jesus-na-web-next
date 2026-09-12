@@ -78,6 +78,8 @@ const areas = [
     descricao:
       "Reflexões bíblicas sobre tecnologia, Inteligência Artificial e os desafios da fé no mundo digital.",
     destaque: "Mundo digital",
+     introducao:
+    "Fé e Tecnologia é um espaço para refletirmos sobre as transformações provocadas pela tecnologia à luz das Escrituras. Novas ferramentas mudam a maneira como trabalhamos, nos comunicamos, aprendemos e até produzimos conteúdo cristão, trazendo também novas perguntas e responsabilidades. Aqui, não queremos tratar a tecnologia como inimiga da fé, nem aceitá-la sem reflexão. Queremos examinar seus usos, desafios e consequências com sabedoria e discernimento, lembrando que a tecnologia muda, mas os princípios da Palavra de Deus permanecem.",
     estudos: [
       {
         titulo: "Inteligência Artificial e Ética Cristã",
