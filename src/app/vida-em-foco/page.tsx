@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import AreaIntroModal from "@/components/AreaIntroModal";
 
 export const metadata: Metadata = {
   title: "Vida em Foco",
@@ -13,6 +14,8 @@ const areas = [
     descricao:
       "O caminho da libertação, da restauração e da permanência em Cristo através da obediência diária.",
     destaque: "Restauração",
+    introducao:
+  "Vida e Restauração é um espaço dedicado a reflexões sobre libertação, recuperação e perseverança na caminhada cristã. Aqui, a Palavra de Deus encontra as experiências reais de quem enfrenta batalhas, recomeços e escolhas diárias. Mais do que falar sobre mudança, esta seção procura refletir sobre o caminho de permanecer firme, reconhecendo que a restauração também é construída no cotidiano, através da fé, da obediência e da dependência de Cristo.",
     estudos: [
       {
         titulo: "Liberto por Cristo, Sustentado pela Obediência",
@@ -29,6 +32,8 @@ const areas = [
     descricao:
       "Recomendações de filmes com mensagens de esperança, fé e transformação.",
     destaque: "Cinema e fé",
+    introducao:
+  "Filmes que Edificam é um espaço onde histórias contadas pelo cinema se tornam pontos de partida para refletirmos sobre a vida e a fé cristã. Não se trata apenas de recomendar bons filmes, mas de olhar para seus personagens, conflitos, escolhas e consequências à luz de princípios bíblicos. Histórias sobre família, perdão, responsabilidade, restauração, esperança e fé podem nos levar a enxergar questões que também fazem parte da nossa própria caminhada.",
     estudos: [
       {
         titulo: "O Retorno de Ben",
@@ -148,6 +153,13 @@ export default function VidaEmFocoPage() {
                 {/* Índice */}
                 <div className="mt-auto border-t border-yellow-500/20 pt-5">
                   <p className="mb-4 text-xs font-bold tracking-[0.18em] text-[#d4af37] uppercase">
+                    {area.introducao && (
+  <AreaIntroModal
+    titulo={area.titulo}
+    destaque={area.destaque}
+    introducao={area.introducao}
+  />
+)}
                     Índice
                   </p>
 
