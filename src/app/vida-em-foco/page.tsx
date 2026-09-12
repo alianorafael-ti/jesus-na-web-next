@@ -50,6 +50,8 @@ const areas = [
     descricao:
       "Leituras que inspiram, ensinam e fortalecem a caminhada cristã.",
     destaque: "Leitura",
+    introducao:
+    "Livros que Edificam é um espaço dedicado a obras que atravessam o tempo e continuam falando à caminhada cristã. Mais do que apresentar livros, queremos refletir sobre as verdades, perguntas e experiências que suas páginas despertam, relacionando a leitura com a fé e com a Palavra de Deus. São histórias e ensinamentos que nos convidam a pensar, amadurecer e prosseguir em nossa jornada com Cristo.",
     estudos: [
       {
         titulo: "O Peregrino — John Bunyan",
@@ -62,6 +64,8 @@ const areas = [
     descricao:
       "Reflexões sobre sustentabilidade, responsabilidade ambiental e o cuidado com a obra de Deus.",
     destaque: "Responsabilidade",
+     introducao:
+    "Cuidando da Criação é um espaço para refletirmos sobre nossa responsabilidade diante do mundo que Deus criou. A fé cristã não diz respeito apenas à nossa relação com Deus e com o próximo, mas também à maneira como lidamos com aquilo que Ele colocou sob nossos cuidados. Aqui queremos olhar para questões ambientais e para nossas escolhas cotidianas à luz das Escrituras, entendendo que cuidar da criação também pode ser uma expressão de gratidão, responsabilidade e obediência ao Criador.",
     estudos: [
       {
         titulo: "O Cristão e o Cuidado com a Criação",
