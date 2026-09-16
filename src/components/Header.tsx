@@ -3,6 +3,8 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
+import Image from "next/image";
+
 
 const links = [
   { nome: "Home", href: "/" },
@@ -30,12 +32,20 @@ export default function Header() {
     <header className="sticky top-0 z-50 border-b border-yellow-500/20 bg-black/90 backdrop-blur-md">
       <div className="mx-auto flex min-h-18 max-w-7xl items-center justify-between px-5">
         <Link
-          href="/"
-          className="text-xl font-bold tracking-wide text-[#d4af37]"
-          onClick={() => setMenuAberto(false)}
-        >
-          Jesus na Web
-        </Link>
+  href="/"
+  className="flex items-center"
+  onClick={() => setMenuAberto(false)}
+  aria-label="Jesus na Web - Página inicial"
+>
+  <Image
+  src="/logo.png"
+  alt="Jesus na Web"
+  width={220}
+  height={150}
+  priority
+  className="h-20 w-auto object-contain"
+/>
+</Link>
 
         <button
           type="button"

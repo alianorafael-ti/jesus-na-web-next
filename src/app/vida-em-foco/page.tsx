@@ -134,7 +134,7 @@ export default function VidaEmFocoPage() {
             {areas.map((area, index) => (
               <article
                 key={area.titulo}
-                className={`flex flex-col rounded-xl border border-white/10 bg-[#161616] p-7 transition hover:-translate-y-1 hover:border-yellow-500/50 ${
+                className={`flex flex-col rounded-xl border border-white/10 bg-[#161616] p-7 transition  hover:border-yellow-500/50 ${
                   index === areas.length - 1 ? "md:col-span-2" : ""
                 }`}
               >
