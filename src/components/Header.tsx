@@ -10,6 +10,7 @@ const links = [
   { nome: "Home", href: "/" },
   { nome: "Estudos", href: "/estudos" },
   { nome: "Vida em Foco", href: "/vida-em-foco" },
+  { nome: "Palavra Pastoral", href: "/palavra-pastoral" },
   { nome: "Quem Somos", href: "/quem-somos" },
 ];
 
