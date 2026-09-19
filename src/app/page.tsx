@@ -192,7 +192,21 @@ export default function Home() {
             </Link>
           </div>
         </div>
+           </section>
+
+      {/* VERSÍCULO DE ENCERRAMENTO */}
+      <section className="bg-[#071426] text-white">
+        <div className="mx-auto max-w-5xl px-6 py-14 text-center md:px-10 md:py-16">
+          <p className="text-2xl font-medium leading-relaxed md:text-3xl">
+            “Conheçamos e prossigamos em conhecer ao Senhor.”
+          </p>
+
+          <p className="mt-5 text-sm font-semibold uppercase tracking-[0.22em] text-[#d4af37]">
+            Oséias 6:3
+          </p>
+        </div>
       </section>
     </main>
   );
 }
+    
