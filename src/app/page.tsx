@@ -163,7 +163,7 @@ export default function Home() {
                 alt="Capa do e-book Renascendo em 40 Dias"
                 fill
                 sizes="(max-width: 1024px) 100vw, 33vw"
-                className="object-cover transition duration-700 group-hover:scale-[1.03]"
+                className="object-cover object-top transition duration-700 group-hover:scale-[1.03]"
               />
 
               <div className="absolute inset-0 bg-gradient-to-t from-black via-black/10 to-transparent" />
