@@ -153,20 +153,20 @@ export default function Home() {
               </div>
             </Link>
 
-            {/* RENASCENDO EM 40 DIAS */}
+            {/* FORMAÇÃO E PROPÓSITO */}
             <Link
-              href="/renascendo-em-40-dias"
-              className="group relative min-h-[480px] overflow-hidden rounded-3xl bg-[#071426] shadow-lg transition duration-300 hover:-translate-y-1 hover:shadow-2xl"
+              href="/formacao-e-proposito"
+              className="group relative min-h-[480px] overflow-hidden rounded-3xl bg-[#111111] shadow-lg transition duration-300 hover:-translate-y-1 hover:shadow-2xl"
             >
               <Image
-                src="/capa.png"
-                alt="Capa do e-book Renascendo em 40 Dias"
+                src="/proposito.png"
+                alt="Livros, caderno, bússola e mochila representando formação e propósito"
                 fill
                 sizes="(max-width: 1024px) 100vw, 33vw"
-                className="object-cover object-top transition duration-700 group-hover:scale-[1.03]"
+                className="object-cover transition duration-700 group-hover:scale-[1.03]"
               />
 
-              <div className="absolute inset-0 bg-gradient-to-t from-black via-black/10 to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-t from-black via-black/35 to-black/10" />
 
               <div className="absolute inset-0 z-10 flex flex-col p-8">
                 <span className="text-sm font-medium tracking-[0.25em] text-[#d4af37]">
@@ -174,12 +174,17 @@ export default function Home() {
                 </span>
 
                 <div className="mt-auto">
-                  <p className="text-xs font-semibold uppercase tracking-[0.2em] text-white">
-                    E-book
+                  <h3 className="text-3xl font-semibold tracking-tight text-white">
+                    Formação e Propósito
+                  </h3>
+
+                  <p className="mt-4 leading-7 text-zinc-200">
+                    Recursos para fortalecer a fé, ampliar o conhecimento e
+                    preparar pessoas para viver e servir com propósito.
                   </p>
 
-                  <span className="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-[#d4af37]">
-                    Conhecer o livro
+                  <span className="mt-8 inline-flex items-center gap-2 text-sm font-semibold text-[#d4af37]">
+                    Explorar conteúdos
                     <span
                       aria-hidden="true"
                       className="transition-transform group-hover:translate-x-1"
@@ -192,7 +197,7 @@ export default function Home() {
             </Link>
           </div>
         </div>
-           </section>
+      </section>
 
       {/* VERSÍCULO DE ENCERRAMENTO */}
       <section className="bg-[#071426] text-white">
@@ -209,4 +214,3 @@ export default function Home() {
     </main>
   );
 }
-    
