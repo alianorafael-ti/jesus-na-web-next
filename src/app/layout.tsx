@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
 import { Geist, Geist_Mono } from "next/font/google";
-
+import { Analytics } from "@vercel/analytics/next";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 
@@ -76,6 +76,7 @@ export default function RootLayout({
         </div>
 
         <Footer />
+<Analytics />
       </body>
     </html>
   );
