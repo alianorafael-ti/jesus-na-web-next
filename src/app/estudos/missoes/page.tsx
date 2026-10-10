@@ -168,7 +168,7 @@ export default function MissoesPage() {
         </section>
 
         <section className="indice-serie">
-          <h2>Estudos da Série</h2>
+          <h2>Estudos Bíblicos</h2>
 
           <div className="grid-serie">
             {estudosMissoes.map((estudo) => (
@@ -187,6 +187,45 @@ export default function MissoesPage() {
                 </div>
               </Link>
             ))}
+          </div>
+        </section>
+                <section className="indice-serie">
+          <h2>🌍 Missões em Ação</h2>
+
+          <p>
+            A missão cristã também se manifesta por meio de
+            atitudes concretas de amor, solidariedade e cuidado
+            com o próximo. Conheça iniciativas que levam
+            esperança e testemunham o Evangelho de Jesus Cristo.
+          </p>
+
+                     <div className="grid-serie">
+            <Link
+              href="/estudos/missoes/caminina"
+              className="card-serie"
+            >
+              <div>
+                <h3>Projeto Caminina — Angola</h3>
+                <p>
+                  Conheça o trabalho missionário desenvolvido
+                  pelo irmão Eduardo em Angola, levando
+                  esperança, acolhimento e cuidado às crianças
+                  e famílias.
+                </p>
+              </div>
+            </Link>
+
+            <div className="card-serie">
+              <div>
+                <h3>Projeto Sobreviventes — Brasil</h3>
+                <p>
+                  Conheça uma missão dedicada ao acolhimento,
+                  à recuperação e à reconstrução de vidas,
+                  levando esperança a pessoas em situação
+                  de vulnerabilidade.
+                </p>
+              </div>
+            </div>
           </div>
         </section>
       </article>

@@ -364,3 +364,11 @@ a {
     min-width: auto;
   }
 }
+
+/* Missões em Ação */
+
+.indice-serie > p {
+  margin-bottom: 1.5rem;
+  line-height: 1.8;
+}
+

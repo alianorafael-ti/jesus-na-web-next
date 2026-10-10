@@ -527,7 +527,22 @@ export default function EstudosPage() {
                 ))}
               </div>
             </div>
+            {/* Chamada: Missões em Ação */}
+            <div className="mb-7 border-t border-yellow-500/20 pt-5">
+              <p className="mb-3 text-sm font-bold tracking-wider text-[#d4af37] uppercase">
+                🌍 Missões em Ação
+              </p>
 
+              <p className="mb-3 leading-7 text-zinc-300">
+                A fé também se manifesta em atitudes concretas
+                de amor e cuidado com o próximo.
+              </p>
+
+              <p className="text-sm leading-6 text-zinc-200">
+                Conheça os projetos missionários Caminina,
+                em Angola, e Sobreviventes, no Brasil.
+              </p>
+            </div>
             <Link
               href="/estudos/missoes"
               className="inline-flex w-fit rounded-md border border-[#d4af37] px-5 py-3 font-semibold text-[#d4af37] transition hover:bg-[#d4af37] hover:text-black"
