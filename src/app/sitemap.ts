@@ -18,6 +18,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/estudos/louvor-e-adoracao",
     "/estudos/meditacoes",
     "/estudos/missoes",
+    "/estudos/missoes/caminina",
     "/formacao-e-proposito",
     "/palavra-pastoral",
     "/quem-somos",
