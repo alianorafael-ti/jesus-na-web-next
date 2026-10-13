@@ -16,16 +16,21 @@ const areas = [
     destaque: "Restauração",
     introducao:
   "Vida e Restauração é um espaço dedicado a reflexões sobre libertação, recuperação e perseverança na caminhada cristã. Aqui, a Palavra de Deus encontra as experiências reais de quem enfrenta batalhas, recomeços e escolhas diárias. Mais do que falar sobre mudança, esta seção procura refletir sobre o caminho de permanecer firme, reconhecendo que a restauração também é construída no cotidiano, através da fé, da obediência e da dependência de Cristo.",
+    
     estudos: [
-      {
-        titulo: "Liberto por Cristo, Sustentado pela Obediência",
-        href: "/vida-em-foco/liberto-por-cristo",
-      },
-      {
-        titulo: "O processo da recaída no cotidiano do indivíduo",
-        href: "/vida-em-foco/quando-a-recaida-comeca",
-      },
-    ],
+  {
+    titulo: "Liberto por Cristo, Sustentado pela Obediência",
+    href: "/vida-em-foco/liberto-por-cristo",
+  },
+  {
+    titulo: "O processo da recaída no cotidiano do indivíduo",
+    href: "/vida-em-foco/quando-a-recaida-comeca",
+  },
+  {
+    titulo: "Pornografia: quando o olhar se torna uma prisão",
+    href: "/vida-em-foco/pornografia-quando-o-olhar-se-torna-uma-prisao",
+  },
+],
   },
   {
     titulo: "Filmes que Edificam",

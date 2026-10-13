@@ -31,7 +31,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/vida-em-foco/o-peregrino",
     "/vida-em-foco/o-retorno-de-ben",
     "/vida-em-foco/quando-a-recaida-comeca",
-    "/vida-em-foco/vida-e-restauracao",
+   "/vida-em-foco/pornografia-quando-o-olhar-se-torna-uma-prisao",
   ];
 
   const paginasDoSite: MetadataRoute.Sitemap = paginasEstaticas.map(
