@@ -215,7 +215,10 @@ export default function MissoesPage() {
               </div>
             </Link>
 
-            <div className="card-serie">
+            <Link
+              href="/estudos/missoes/sobreviventes"
+              className="card-serie"
+            >
               <div>
                 <h3>Projeto Sobreviventes — Brasil</h3>
                 <p>
@@ -225,7 +228,7 @@ export default function MissoesPage() {
                   de vulnerabilidade.
                 </p>
               </div>
-            </div>
+            </Link>
           </div>
         </section>
       </article>
