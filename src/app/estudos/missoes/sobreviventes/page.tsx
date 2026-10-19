@@ -275,6 +275,7 @@ export default function SobreviventesPage() {
 </section>
 
 
+      
       {/* PARTICIPE */}
       <section className="bg-[#071426] py-16 text-white">
         <div className="mx-auto max-w-5xl px-6 md:px-10">
@@ -283,28 +284,182 @@ export default function SobreviventesPage() {
           </p>
 
           <h2 className="mt-4 text-3xl font-bold md:text-4xl">
-            Você também pode ajudar a construir recomeços
+            Ajude a construir uma oportunidade de recomeço
           </h2>
 
           <p className="mt-6 max-w-3xl leading-8 text-slate-200">
-            O Sobreviventes está dando seus primeiros passos.
-            Para ampliar suas ações, busca desenvolver uma
-            rede de apoio formada por pessoas, voluntários
-            e parceiros comprometidos com essa missão.
+            A esperança precisa chegar onde a dor está. E, muitas vezes,
+            para isso, precisamos de mais do que palavras.
           </p>
 
           <p className="mt-5 max-w-3xl leading-8 text-slate-200">
-            Você pode participar em oração, compartilhar
-            o projeto e contribuir para que mais pessoas
-            conheçam essa iniciativa.
+            O Sobreviventes busca acolher, ouvir e orientar pessoas em
+            situação de rua, especialmente aquelas que enfrentam a
+            dependência química e desejam encontrar um caminho de
+            recuperação. Mas o acolhimento também envolve necessidades
+            práticas, que exigem recursos e uma rede de apoio.
           </p>
 
-          <p className="mt-6 text-sm leading-7 text-slate-300">
-            Em breve, serão divulgadas informações sobre
-            formas de participação e apoio ao projeto.
+          <h3 className="mt-12 text-2xl font-bold text-[#d4af37]">
+            Como sua contribuição pode ajudar?
+          </h3>
+
+          <div className="mt-6 grid gap-4 md:grid-cols-2">
+            {[
+              {
+                titulo: "Alimentação e água",
+                descricao:
+                  "Apoio às necessidades imediatas das pessoas acolhidas.",
+              },
+              {
+                titulo: "Higiene e vestuário",
+                descricao:
+                  "Produtos de higiene, roupas e outros itens essenciais.",
+              },
+              {
+                titulo: "Transporte e encaminhamentos",
+                descricao:
+                  "Deslocamentos para atendimentos de saúde e serviços de assistência.",
+              },
+              {
+                titulo: "Acolhimento emergencial",
+                descricao:
+                  "Apoio a necessidades básicas durante a busca por atendimento.",
+              },
+              {
+                titulo: "Estrutura do projeto",
+                descricao:
+                  "Materiais e planejamento de um futuro espaço de apoio, acolhimento e organização de doações.",
+              },
+            ].map((item) => (
+              <div
+                key={item.titulo}
+                className="rounded-xl border border-white/15 bg-white/5 p-6"
+              >
+                <h4 className="font-semibold text-[#d4af37]">
+                  {item.titulo}
+                </h4>
+                <p className="mt-3 leading-7 text-slate-300">
+                  {item.descricao}
+                </p>
+              </div>
+            ))}
+          </div>
+
+          <p className="mt-8 max-w-3xl leading-8 text-slate-200">
+            Não prometemos transformar uma vida da noite para o dia.
+            Queremos estar presentes, oferecer oportunidades reais
+            e caminhar ao lado daqueles que desejam recomeçar.
+            As contribuições serão destinadas às necessidades do
+            projeto, conforme os recursos disponíveis.
+          </p>
+
+          {/* FORMAS DE APOIO */}
+          <div className="mt-12 grid gap-6 md:grid-cols-2">
+            <div className="rounded-2xl bg-[#f7f5ef] p-7 text-[#071426]">
+              <h3 className="text-2xl font-bold">
+                Apoie com uma doação
+              </h3>
+
+              <p className="mt-4 leading-7">
+                Sua contribuição pode ajudar a transformar o
+                acolhimento em ações concretas.
+              </p>
+
+              <p className="mt-6 text-sm font-semibold uppercase tracking-wide">
+                Chave Pix — Mercado Pago
+              </p>
+
+              <p className="mt-2 break-all text-xl font-bold">
+                +55 11 94327-9491
+              </p>
+
+              <p className="mt-4 text-sm leading-6 text-slate-600">
+                Chave informada pela responsável pelo projeto.
+                Antes de concluir a transferência, confira os
+                dados do destinatário apresentados pelo seu banco.
+              </p>
+            </div>
+
+            <div className="rounded-2xl border border-[#d4af37]/50 p-7">
+              <h3 className="text-2xl font-bold text-[#d4af37]">
+                Entre em contato
+              </h3>
+
+              <p className="mt-4 leading-7 text-slate-200">
+                Deseja conhecer melhor o Sobreviventes, colaborar
+                como voluntário ou conversar sobre outras formas
+                de apoio? Fale diretamente com a responsável
+                pelo projeto.
+              </p>
+
+              <p className="mt-6 font-semibold">
+                WhatsApp: (11) 94327-9491
+              </p>
+
+              <a
+                href="https://wa.me/5511943279491"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-6 inline-flex rounded-lg bg-[#d4af37] px-6 py-3 font-bold text-[#071426] transition hover:bg-[#e8c65c]"
+              >
+                Conversar pelo WhatsApp
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* TRANSPARENCIA */}
+      <section className="bg-[#f7f5ef] py-16 text-[#071426]">
+        <div className="mx-auto max-w-5xl px-6 md:px-10">
+          <p className="text-sm font-semibold uppercase tracking-widest text-amber-700">
+            Nosso compromisso
+          </p>
+
+          <h2 className="mt-4 text-3xl font-bold md:text-4xl">
+            Transparência e prestação de contas
+          </h2>
+
+          <p className="mt-6 max-w-3xl leading-8 text-slate-700">
+            Sua contribuição merece respeito, responsabilidade e
+            transparência. O Projeto Sobreviventes assume o
+            compromisso de administrar com responsabilidade os
+            recursos recebidos, destinando-os às necessidades
+            de suas atividades de acolhimento e apoio.
+          </p>
+
+          <p className="mt-5 max-w-3xl leading-8 text-slate-700">
+            Como parte desse compromisso, o projeto prevê a
+            publicação de relatórios mensais de atividades e
+            prestação de contas, para que os apoiadores possam
+            acompanhar os recursos arrecadados, sua aplicação
+            e o desenvolvimento da missão.
+          </p>
+
+          <div className="mt-10 rounded-2xl border border-amber-200 bg-white p-7 shadow-sm">
+            <h3 className="text-xl font-bold">
+              Relatórios mensais
+            </h3>
+
+            <p className="mt-3 font-semibold text-amber-800">
+              Primeiro relatório em preparação
+            </p>
+
+            <p className="mt-3 leading-7 text-slate-600">
+              Estamos organizando o primeiro período de prestação
+              de contas. Os relatórios serão disponibilizados
+              nesta seção nas próximas atualizações, conforme
+              o calendário de acompanhamento do projeto.
+            </p>
+          </div>
+
+          <p className="mt-8 text-center text-lg font-semibold italic">
+            Porque quem contribui também faz parte dessa história.
           </p>
         </div>
       </section>
+
     </main>
   );
 }
