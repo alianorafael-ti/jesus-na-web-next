@@ -42,7 +42,7 @@ export default function SobreviventesPage() {
         {/* LOGOTIPO DO SOBREVIVENTES */}
 <div className="relative mt-6 h-28 w-28 overflow-hidden rounded-full bg-white shadow-lg md:h-32 md:w-32">
   <Image
-    src="/images/missoes/sobreviventes/logo.jpeg"
+    src="/images/missoes/sobreviventes/logo.png"
     alt="Logotipo oficial do Projeto Sobreviventes"
     fill
     sizes="(max-width: 768px) 112px, 128px"
@@ -273,6 +273,123 @@ export default function SobreviventesPage() {
     </p>
   </div>
 </section>
+
+
+{/* DIÁRIO DA MISSÃO */}
+<section className="relative isolate overflow-hidden bg-[#f7f5ef] py-16">
+
+  {/* MANCHAS E PINCELADAS DECORATIVAS */}
+  <div
+    aria-hidden="true"
+    className="pointer-events-none absolute inset-0 -z-10 overflow-hidden"
+  >
+    {/* Mancha superior esquerda */}
+    <div className="absolute -left-28 top-24 h-80 w-80 rotate-[-25deg] rounded-[45%_55%_65%_35%] bg-[#ff6a00]/10 blur-3xl" />
+
+    {/* Mancha central direita */}
+    <div className="absolute -right-28 top-1/3 h-96 w-80 rotate-12 rounded-[65%_35%_45%_55%] bg-[#ff6a00]/15 blur-3xl" />
+
+    {/* Mancha inferior esquerda */}
+    <div className="absolute -left-24 bottom-20 h-72 w-72 rounded-[40%_60%_35%_65%] bg-[#ff6a00]/10 blur-2xl" />
+
+    {/* Riscos diagonais */}
+    <div className="absolute left-4 top-1/3 hidden h-1 w-32 -rotate-12 rounded-full bg-[#ff6a00]/25 md:block" />
+    <div className="absolute left-8 top-[35%] hidden h-1 w-20 -rotate-12 rounded-full bg-[#ff6a00]/20 md:block" />
+
+    <div className="absolute right-5 bottom-1/4 hidden h-1 w-36 rotate-[-18deg] rounded-full bg-[#ff6a00]/25 md:block" />
+    <div className="absolute right-10 bottom-[23%] hidden h-1 w-24 rotate-[-18deg] rounded-full bg-[#ff6a00]/20 md:block" />
+  </div>
+  <div className="mx-auto max-w-5xl px-6 md:px-10">
+    <p className="text-sm font-semibold uppercase tracking-wider text-[#9a7b18]">
+      Diário da Missão · Novembro de 2026
+    </p>
+
+    <h2 className="mt-3 text-3xl font-bold text-[#071426]">
+      Vidas, encontros e oportunidades de recomeçar
+    </h2>
+
+    <p className="mt-6 max-w-3xl leading-8 text-slate-700">
+      O Projeto Sobreviventes nas Ruas continua sua missão de
+      acolhimento, escuta e apoio às pessoas em situação de
+      vulnerabilidade. Entre as ações recentes, um momento
+      especial marcou essa caminhada: o encaminhamento de
+      Juliana para uma clínica de recuperação.
+    </p>
+
+    <div className="mx-auto mt-12 grid max-w-2xl gap-8 md:grid-cols-2">
+      <article className="overflow-hidden rounded-2xl bg-white shadow-sm">
+        <video
+          controls
+          preload="metadata"
+          playsInline
+          className="aspect-[9/16] w-full bg-black object-contain"
+          aria-label="Vídeo sobre o encaminhamento de Juliana"
+        >
+          <source
+            src="/videos/sobreviventes/video1.mp4"
+            type="video/mp4"
+          />
+          Seu navegador não suporta vídeos.
+        </video>
+
+        <div className="p-6">
+          <h3 className="text-xl font-bold text-[#071426]">
+            Juliana — Um novo começo
+          </h3>
+
+          <p className="mt-4 leading-7 text-slate-700">
+            Depois de momentos de acolhimento e orientação,
+            Juliana deu um passo importante ao aceitar o
+            encaminhamento para uma clínica de recuperação.
+            Um momento de esperança, que representa o início
+            de uma nova etapa em sua caminhada.
+          </p>
+        </div>
+      </article>
+
+      <article className="overflow-hidden rounded-2xl bg-white shadow-sm">
+        <video
+          controls
+          preload="metadata"
+          playsInline
+          className="aspect-[9/16] w-full bg-black object-contain"
+          aria-label="Agradecimento de Rosana aos colaboradores"
+        >
+          <source
+            src="/videos/sobreviventes/agradecimento.mp4"
+            type="video/mp4"
+          />
+          Seu navegador não suporta vídeos.
+        </video>
+
+        <div className="p-6">
+          <h3 className="text-xl font-bold text-[#071426]">
+            Gratidão a quem tornou isso possível
+          </h3>
+
+          <p className="mt-4 leading-7 text-slate-700">
+            Rosana compartilha a alegria pelo acolhimento
+            de Juliana e agradece às pessoas que contribuíram
+            para tornar esse encaminhamento possível.
+            Cada gesto de solidariedade fortalece a missão
+            e ajuda a abrir caminhos para novos recomeços.
+          </p>
+        </div>
+      </article>
+    </div>
+
+    <blockquote className="mt-12 rounded-xl border-l-4 border-[#d4af37] bg-white p-7">
+      <p className="text-lg italic leading-8 text-[#071426]">
+        &ldquo;Levai as cargas uns dos outros e assim
+        cumprireis a lei de Cristo.&rdquo;
+      </p>
+      <cite className="mt-3 block not-italic text-slate-600">
+        Gálatas 6:2
+      </cite>
+    </blockquote>
+  </div>
+</section>
+
 
 
       
