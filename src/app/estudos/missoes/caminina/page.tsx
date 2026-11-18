@@ -2,6 +2,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import GaleriaRelatorio from "./GaleriaRelatorio";
 
 export const metadata: Metadata = {
   title: "Projeto Caminina para Cristo | Jesus na Web",
@@ -16,10 +17,22 @@ const fotografias = Array.from({ length: 9 }, (_, i) => ({
 
 const relatorios = [
   {
+    mes: "Outubro de 2026",
+    arquivo: "/documentos/missoes/caminina/relatorio-outubro-2026.pdf",
+    descricao:
+      "Acompanhe as atividades missionárias realizadas em outubro e os registros fotográficos compartilhados pela família missionária.",
+    fotos: Array.from(
+      { length: 42 },
+      (_, i) =>
+        `/images/missoes/caminina/outubro-2026/foto-${String(i + 1).padStart(2, "0")}.jpeg`
+    ),
+  },
+  {
     mes: "Setembro de 2026",
     arquivo: "/documentos/missoes/caminina/relatorio-setembro-2026.pdf",
     descricao:
       "Evangelização, discipulado, cultos, formação cristã, desafios e pedidos de oração.",
+    fotos: [],
   },
 ];
 
@@ -189,13 +202,23 @@ export default function CamininaPage() {
                   {relatorio.descricao}
                 </p>
 
-                <a
-                  href={relatorio.arquivo}
-                  target="_blank"
-                  className="mt-6 inline-flex items-center justify-center rounded-lg bg-[#d4af37] px-6 py-3 font-bold !text-[#071426] transition hover:bg-[#e8c65b]"
-                >
-                  Ler relatório completo (PDF) ↗
-                </a>
+                <div className="mt-6 flex flex-wrap items-center gap-3">
+  <a
+    href={relatorio.arquivo}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="inline-flex items-center justify-center rounded-lg bg-[#d4af37] px-6 py-3 font-bold !text-[#071426] transition hover:bg-[#e8c65b]"
+  >
+    Ler relatório completo (PDF) ↗
+  </a>
+
+  {relatorio.fotos.length > 0 && (
+    <GaleriaRelatorio
+      mes={relatorio.mes}
+      fotos={relatorio.fotos}
+    />
+  )}
+</div>
               </article>
             ))}
           </div>
