@@ -10,7 +10,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/estudos",
     "/estudos/apologetica",
     "/estudos/compositores-da-harpa",
-    "/estudos/compositores-da-harpa/epilogo",
     "/estudos/disciplinas-espirituais",
     "/estudos/espirito-santo",
     "/estudos/estudos-biblicos",

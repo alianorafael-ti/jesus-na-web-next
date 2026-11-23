@@ -29,6 +29,7 @@ import { isaacWatts } from "@/content/estudos/isaac-watts";
 import { charlesWesley } from "@/content/estudos/charles-wesley";
 import { fannyCrosby } from "@/content/estudos/fanny-crosby";
 import { philipBliss } from "@/content/estudos/philip-bliss";
+import { pauloLeivasMacalao } from "@/content/estudos/paulo-leivas-macalao";
 
 export const estudos: Estudo[] = [
   eleEscolheuACruz,
@@ -59,6 +60,7 @@ export const estudos: Estudo[] = [
   charlesWesley,
   fannyCrosby,
   philipBliss,
+  pauloLeivasMacalao,
 ];
 
 export function buscarEstudoPorSlug(slug: string): Estudo | undefined {

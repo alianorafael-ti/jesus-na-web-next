@@ -148,44 +148,66 @@ export default function EstudosPage() {
               que contribuíram para os hinos que edificam a Igreja até hoje.
             </p>
 
-            <div className="mb-7 border-t border-yellow-500/20 pt-5">
-              <p className="mb-4 text-sm font-bold tracking-wider text-[#d4af37] uppercase">
-                Índice
-              </p>
+            
+<div className="mb-7 border-t border-yellow-500/20 pt-5">
+  <p className="mb-4 text-sm font-bold tracking-wider text-[#d4af37] uppercase">
+    Índice
+  </p>
 
-              <div className="flex flex-col gap-3">
-                <Link
-                  href="/estudos/compositores-da-harpa"
-                  className="text-zinc-200 transition hover:text-[#d4af37]"
-                >
-                  Introdução
-                </Link>
+  <div className="flex flex-col gap-3">
+    <Link
+      href="/estudos/compositores-da-harpa"
+      className="text-zinc-200 transition hover:text-[#d4af37]"
+    >
+      Introdução
+    </Link>
 
-                {compositoresDaHarpa.map((estudo) => (
-                  <Link
-                    key={estudo.id}
-                    href={`/estudos/${estudo.slug}`}
-                    className="text-zinc-200 transition hover:text-[#d4af37]"
-                  >
-                    {estudo.ordemNaSerie}.{" "}
-                    {estudo.subcategoria ?? estudo.titulo}
-                  </Link>
-                ))}
+    {/* Primeira etapa: preparação histórica */}
+    <div className="mt-3 border-t border-yellow-500/20 pt-4">
+      <h3 className="mb-3 text-sm font-bold text-[#d4af37]">
+        Primeira Etapa — Preparação Histórica
+      </h3>
 
-                <div className="mt-3 border-t border-yellow-500/20 pt-4">
-                  <p className="mb-2 text-xs font-bold tracking-wider text-[#d4af37] uppercase">
-                    Epílogo
-                  </p>
+      <div className="flex flex-col gap-3">
+        {compositoresDaHarpa
+          .filter((estudo) => (estudo.ordemNaSerie ?? 0) <= 5)
+          .map((estudo) => (
+            <Link
+              key={estudo.id}
+              href={`/estudos/${estudo.slug}`}
+              className="text-zinc-200 transition hover:text-[#d4af37]"
+            >
+              {estudo.ordemNaSerie}.{" "}
+              {estudo.subcategoria ?? estudo.titulo}
+            </Link>
+          ))}
+      </div>
+    </div>
 
-                  <Link
-                    href="/estudos/compositores-da-harpa/epilogo"
-                    className="text-zinc-200 transition hover:text-[#d4af37]"
-                  >
-                    Muito Além das Biografias
-                  </Link>
-                </div>
-              </div>
-            </div>
+    {/* Segunda etapa: colaboradores da Harpa Cristã */}
+    <div className="mt-3 border-t border-yellow-500/20 pt-4">
+      <h3 className="mb-3 text-sm font-bold text-[#d4af37]">
+        Segunda Etapa — Colaboradores da Harpa Cristã
+      </h3>
+
+      <div className="flex flex-col gap-3">
+        {compositoresDaHarpa
+          .filter((estudo) => (estudo.ordemNaSerie ?? 0) > 5)
+          .map((estudo) => (
+            <Link
+              key={estudo.id}
+              href={`/estudos/${estudo.slug}`}
+              className="text-zinc-200 transition hover:text-[#d4af37]"
+            >
+              {estudo.ordemNaSerie}.{" "}
+              {estudo.subcategoria ?? estudo.titulo}
+            </Link>
+          ))}
+      </div>
+    </div>
+  </div>
+</div>
+
 
             <Link
               href="/estudos/compositores-da-harpa"
